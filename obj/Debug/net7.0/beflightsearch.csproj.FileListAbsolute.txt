@@ -1,0 +1,7 @@
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.csproj.AssemblyReference.cache
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.AssemblyInfoInputs.cache
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.AssemblyInfo.cs
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.csproj.CoreCompileInputs.cache
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.MvcApplicationPartsAssemblyInfo.cs
+/Users/josedaniel/Projects/beflightsearch/obj/Debug/net7.0/beflightsearch.MvcApplicationPartsAssemblyInfo.cache
