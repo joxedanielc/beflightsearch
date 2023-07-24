@@ -18,9 +18,10 @@ namespace beflightsearch.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetFlights()
+        public IActionResult GetFlights(string? departureCity, string? arrivalCity, DateTime? departureDate, DateTime? arrivalDate)
         {
-            return Ok(_flightService.GetFlights());
+            var flights = _flightService.GetFlights(departureCity, arrivalCity, departureDate, arrivalDate);
+            return Ok(flights);
         }
 
         [HttpGet("{id}")]
