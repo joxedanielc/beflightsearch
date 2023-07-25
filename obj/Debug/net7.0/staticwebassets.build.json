@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LxFf9rcH9AKT0hus66DUDdmKs02rmIJPQVkI56zLhqM=",
+  "Source": "beflightsearch",
+  "BasePath": "_content/beflightsearch",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
