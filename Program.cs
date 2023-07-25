@@ -25,7 +25,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseCors(builder => builder
-    .WithOrigins("http://localhost:3000")
+    .WithOrigins("http://localhost:8080")
     .AllowAnyMethod()
     .AllowAnyHeader()
     .AllowCredentials());
