@@ -7,13 +7,11 @@ This project is a RESTful API service to get information from flights.
 - Get all flights, flight by id and creates flight
 
 # Table of contents  
-1. [Tech Stack](https://github.com/joxedanielc/github-timeline-api#tech-stack)  
-2. Code Explanation
-    1. [API](https://github.com/joxedanielc/github-timeline-api#api)
-    2. [Utils](https://github.com/joxedanielc/github-timeline-api#utils)
-4. [Run Locally](https://github.com/joxedanielc/github-timeline-api#run-locally)  
-5. [Feedback](https://github.com/joxedanielc/github-timeline-api#feedback)
-6. [License](https://github.com/joxedanielc/github-timeline-api#license)
+1. [Tech Stack](https://github.com/joxedanielc/beflightsearch#tech-stack)  
+2. [Code Explanation](https://github.com/joxedanielc/beflightsearch#code-explanation)
+4. [Run Locally](https://github.com/joxedanielc/beflightsearch#run-locally)  
+5. [Feedback](https://github.com/joxedanielc/beflightsearch#feedback)
+6. [License](https://github.com/joxedanielc/beflightsearch#license)
 
 ## Tech Stack  
 
@@ -55,7 +53,7 @@ You will need to update the port in `WithOrigins` so the BE allows calls.
 
 ~~~bash  
 app.UseCors(builder => builder
-    .WithOrigins("http://localhost:portToUpdated"));
+    .WithOrigins("http://localhost:portToBeUpdated"));
 ~~~
 
 Run the application :rocket:
