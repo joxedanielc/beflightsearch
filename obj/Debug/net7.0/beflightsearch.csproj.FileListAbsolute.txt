@@ -15,7 +15,9 @@
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/MySqlConnector.dll
+/Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Newtonsoft.Json.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
+/Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/josedaniel/Projects/beflightsearch/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll

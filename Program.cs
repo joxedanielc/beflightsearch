@@ -30,7 +30,7 @@ app.UseCors(builder => builder
     .AllowAnyHeader()
     .AllowCredentials());
 
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsProduction())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
@@ -40,10 +40,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
-/*app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});*/
-
 app.MapControllers();
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.Run();

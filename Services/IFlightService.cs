@@ -6,6 +6,6 @@ namespace beflightsearch.Models
     {
         IEnumerable<Flight> GetFlights(string? departureCity, string? arrivalCity, DateTime? departureDate, DateTime? arrivalDate);
         Flight GetFlightById(int id);
-        void CreateFlight(Flight flight);
+        Flight CreateFlight(Flight flight);
     }
 }

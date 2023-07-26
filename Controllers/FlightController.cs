@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using beflightsearch.Models;
 using beflightsearch.Data;
+using beflightsearch.Exceptions;
 
 namespace beflightsearch.Controllers
 {
@@ -29,7 +30,9 @@ namespace beflightsearch.Controllers
         {
             var flight = _flightService.GetFlightById(id);
             if (flight == null)
-                return NotFound();
+            {
+                throw new NotFoundException($"Flight with ID {id} not found.");
+            }
 
             return Ok(flight);
         }
@@ -38,11 +41,25 @@ namespace beflightsearch.Controllers
         public IActionResult CreateFlight([FromBody] Flight flight)
         {
             if (flight == null)
-                return BadRequest();
+            {
+                return BadRequest("Invalid request body. Flight data is missing.");
+            }
 
-            _flightService.CreateFlight(flight);
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors.Select(e => e.ErrorMessage));
+                var errorResponse = new ErrorResponse
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    Message = "Invalid data",
+                };
+                return BadRequest(errorResponse);
+            }
 
-            return CreatedAtAction(nameof(GetFlightById), new { id = flight.Id }, flight);
-        }
+            flight.Id = 0;
+
+            var createdFlight = _flightService.CreateFlight(flight);
+            return CreatedAtAction(nameof(GetFlightById), new { id = createdFlight.Id }, createdFlight);
+        }    
     }
 }

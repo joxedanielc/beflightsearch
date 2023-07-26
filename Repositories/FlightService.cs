@@ -49,13 +49,15 @@ namespace beflightsearch.Models
             return _context.Flights.Find(id);
         }
 
-        public void CreateFlight(Flight flight)
+        public Flight CreateFlight(Flight flight)
         {
             if (flight == null)
                 throw new ArgumentNullException(nameof(flight));
 
             _context.Flights.Add(flight);
             _context.SaveChanges();
+
+            return flight;
         }
     }
 }

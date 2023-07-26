@@ -46,6 +46,12 @@ Run migrations
 dotnet ef database update
 ~~~
 
+API running at (update the port if needed)
+
+~~~bash  
+https://localhost:5056/swagger/index.html
+~~~
+
 **Update CORS origins in file Program.cs**
 
 Once you lift `feflightsearch`, you will get the port where is applications is running.
