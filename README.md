@@ -54,7 +54,7 @@ https://localhost:5056/swagger/index.html
 
 **Update CORS origins in file Program.cs**
 
-Once you lift `feflightsearch`, you will get the port where is applications is running.
+Once you lift `feflightsearch`, you will get the port where the applications is running at.
 You will need to update the port in `WithOrigins` so the BE allows calls.
 
 ~~~bash  
